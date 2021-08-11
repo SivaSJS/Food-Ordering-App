@@ -1,0 +1,240 @@
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Slab&family=Lobster&family=Merriweather&family=Open+Sans&family=Oswald&family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&family=Squada+One&display=swap');
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto" ,sans-serif;
+   background-color:  #e1fee2;
+   
+}
+
+::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: rgb(19, 34, 15);
+}
+
+
+.first-div{
+     padding-bottom: 20px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+label{
+    font-family:'Acme';
+    font-size: 16px;
+
+   
+}
+#menu{
+    margin-bottom: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+#search-bar{
+    height: 35px;
+    width: 300px;
+   
+    border-radius: 8px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding-bottom: 10px;
+}
+
+
+h2{
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+     color: #ff6c0a;
+    margin-left: 70px;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+      
+}
+
+
+#fav-button{
+     width: 200px;
+     height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color:#98f473;
+   
+    color: rgb(20, 22, 20);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+
+#sort {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 35px;
+    width: 300px;
+    border-radius: 12px;
+    background-color:rgb(13, 61, 57);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#sort:hover{
+    background-color: rgb(233, 232, 235);
+    color: green;
+}
+
+#type{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 35px;
+    width: 300px;
+    border-radius: 12px;
+    background-color: rgb(13, 61, 57);
+    color: white;
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+#type:hover {
+    color:green;
+    background-color: rgb(233, 232, 235);
+}
+
+main {
+    /* height: calc(100vh - 80px); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    position: relative;
+   }
+
+   .card {
+       display: flex;
+       align-items:stretch;
+       text-align: center;
+       justify-content: space-evenly;
+       flex-direction: column;
+       background: linear-gradient(#37854f, #173620);
+       width: 270px;
+       height: 400px;
+       margin: 40px;
+       font-family: 'Ubuntu', sans-serif;
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+       border-radius: 8px;
+       color: white;
+   }
+
+   .card-image{
+       height: 150px;
+        margin-bottom: 13px;
+       background-size: cover;
+       border-radius: 8px;
+   }
+
+
+   .card-1{
+       background-image: url("food-item.jpg");
+       border-radius: 12px;
+   }
+
+    .card p{
+        padding-top: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+    }
+
+    .card .click{
+        background-color: rgb(19, 153, 79);
+        color: white;
+        padding: 10px 15px;
+        display: block;
+        text-align: center;
+        margin: 15px 40px;
+        text-decoration: none;
+        border-radius: 12px;
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       cursor: pointer;
+    
+    }
+
+    .card .click:hover{
+        background-color: rgb(131, 129, 128);
+        color:rgb(189, 247, 244);
+        cursor: pointer;
+    }
+
+    .card:hover{
+        background-color: #C71585;
+        color: white;
+        transform: scale(1.03);
+        transition: all 0.50s ease;
+
+    }
+
+    h3{
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 2px;
+        color: rgb(12, 233, 122);
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+
+    @media screen and (max-width: 500px) {
+       #sort ,  #type , #search-bar{
+           width: 100px;
+           padding-left: 8px;
+           font-size: 12px;
+       }
+       label {
+           padding-left: 12px;
+       }
+
+     nav h2 {
+         padding: 12px;
+         font-size: 26px;
+     }
+     #fav-button{margin-top: 10px;
+         width: 150px;
+         font-size: 12px;
+     }
+
+    #search{
+       margin-top: 20px;
+       margin-right: 6px;
+    }
+    ::placeholder{
+      letter-spacing: normal;
+      padding: 0;
+      margin: 0;
+    }
+    
+   
+      }
+    
