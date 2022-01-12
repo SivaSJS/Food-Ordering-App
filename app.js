@@ -161,22 +161,22 @@ const type = document.getElementById("type");
 function renderingCards(filteredValue) {
   const restMap = filteredValue.map((item) => {
     return `
-				 <div class="card">
-						<div class="card-image card-1"></div>
-						<h3> ${item.name}</h3>
-						<p> Rating:  ${item.rating}</p>
-						<p> ETA :  ${item.ETA}</p>
-						<p>  ${item.Tags}</p>
-						<button 
-                type='submit'
-                onclick = "this.disabled = true; 
-                addToFav(${item.id})" 
-                class = "click" 
-                > 
-                Add to ❤
-					  </button>
-				 </div>
- 			 `;
+      <div class="card">
+	<div class="card-image card-1"></div>
+		<h3> ${item.name}</h3>
+		<p> Rating:  ${item.rating}</p>
+		<p> ETA :  ${item.ETA}</p>
+		<p>  ${item.Tags}</p>
+	        <button 
+		  type='submit'
+		  onclick = "this.disabled = true; 
+		  addToFav(${item.id})" 
+		  class = "click" 
+		  > 
+		  Add to ❤
+	        </button>
+      </div>
+          `;
   });
   cards.innerHTML = restMap;
 }
