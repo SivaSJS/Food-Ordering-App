@@ -231,7 +231,7 @@ function tagsValue(event) {
 //Adding Functionality to Favorite Button
 let add = [];
 function addToFav(id) {
-  add = JSON.parse(localStorage.getItem("cart") || []);
+  add = JSON.parse(localStorage.getItem("cart")) || [];
   const value = restaurants.filter((item) => {
     return item.id === id;
   });
